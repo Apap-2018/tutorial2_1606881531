@@ -1,0 +1,21 @@
+Latihan Project Viral
+1. a. Tidak
+   b. tidak akan terbuka karena url telah diganti menjadi viral2jari
+   c. Me-"map" web request ke method di spring controller
+2. a. tidak
+   b. Yang terjadi adalah fungsi yang menjalankan "localhost:8080/viral" berganti namanya menjadi viral(). Itu saja.
+3. a. terjadi
+   b. di dalam template, tidak ada "viral2jari.html", jadi tidak bisa diresolve oleh framework
+   c. banyak. Dari string, map, reroute, dll. https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-return-types
+
+Latihan Request Parameter
+1. Karena sudah direplace oleh apa yang ada di dalam string th:text
+2. Bisa dibuka layaknya sebelumnya, hanya saja harus melewati viral/challenge (e.g. viral/challenge?name=keekee)
+3. a. variabel name harus diisi
+   b. variabel tidak harus diisi dan hasilnya adalah (null do you love me?)
+   c. variabel diubah menjadi "kiki" meskipun tidak diisi
+
+Latihan Path Variable
+1. Required String parameter 'name' is not present
+2. Ambiguous handler methods mapped for HTTP path 'http://localhost:8080/challenge/' karena sekarang ada dua fungsi yang mengarah ke url yang sama. (fungsi challenge masih ada)
+3. sebuah page "kiki do you love me"
